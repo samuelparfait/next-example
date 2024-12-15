@@ -18,7 +18,7 @@ export default async function Page() {
   const posts = data as Post[];
 
   return (
-    <PageLayout title='Posts'>
+    <PageLayout title='View all posts'>
       {posts.map(({ id, title, category }) => (
         <div key={id} className='flex items-center space-x-2'>
           <Link href={`/posts/${id}`} className='hover:underline'>
